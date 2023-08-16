@@ -137,3 +137,147 @@ blockquote.quote {
     color: #fff;
     background: #34495e;
 }
+
+//  ~\blog\assets\scss\custom.scss
+
+// 页面基本配色
+:root {
+    // 全局顶部边距
+    --main-top-padding: 30px;
+    // 全局卡片圆角
+    --card-border-radius: 25px;
+    // 标签云卡片圆角
+    --tag-border-radius: 8px;
+    // 卡片间距
+    --section-separation: 40px;
+    // 全局字体大小
+    --article-font-size: 1.8rem;
+    // 行内代码背景色
+    --code-background-color: #f8f8f8;
+    // 行内代码前景色
+    --code-text-color: #e96900;
+    // 暗色模式下样式
+    &[data-scheme="dark"] {
+      // 行内代码背景色
+      --code-background-color: #ff6d1b17;
+      // 行内代码前景色
+      --code-text-color: #e96900;
+    }
+  }
+  
+  //------------------------------------------------------
+  // 修复引用块内容窄页面显示问题
+  a {
+    word-break: break-all;
+  }
+  
+  code {
+    word-break: break-all;
+  }
+  
+  //---------------------------------------------------
+  // 文章内容图片圆角阴影
+  .article-page .main-article .article-content {
+    img {
+      max-width: 96% !important;
+      height: auto !important;
+      border-radius: 8px;
+    }
+  }
+  
+  //------------------------------------------------
+  // 文章内容引用块样式
+  .article-content {
+    blockquote {
+      border-left: 6px solid #358b9a1f !important;
+      background: #3a97431f;
+    }
+  }
+  // ---------------------------------------
+  // 代码块基础样式修改
+  .highlight {
+    max-width: 102% !important;
+    background-color: var(--pre-background-color);
+    padding: var(--card-padding);
+    position: relative;
+    border-radius: 20px;
+    margin-left: -7px !important;
+    margin-right: -12px;
+    box-shadow: var(--shadow-l1) !important;
+  
+    &:hover {
+      .copyCodeButton {
+        opacity: 1;
+      }
+    }
+  
+    // keep Codeblocks LTR
+    [dir="rtl"] & {
+      direction: ltr;
+    }
+  
+    pre {
+      margin: initial;
+      padding: 0;
+      margin: 0;
+      width: auto;
+    }
+  }
+  
+  // light模式下的代码块样式调整
+  [data-scheme="light"] .article-content .highlight {
+    background-color: #fff9f3;
+  }
+  
+  [data-scheme="light"] .chroma {
+    color: #ff6f00;
+    background-color: #fff9f3cc;
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--accent-color);
+  
+    &:hover {
+      color: var(--accent-color-darker);
+    }
+  
+    &.link {
+      color: #4288b9ad;
+      font-weight: 600;
+      padding: 0 2px;
+      text-decoration: none;
+      cursor: pointer;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  //-------------------------------------------------
+  //文章封面高度更改
+  .article-list article .article-image img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  
+    @include respond(md) {
+      height: 200px;
+    }
+  
+    @include respond(xl) {
+      height: 305px;
+    }
+  }
+  
+    
+  //-------------------------------------------------------
+  //全局页面小图片样式微调
+  .article-list--compact article .article-image img {
+    width: var(--image-size);
+    height: var(--image-size);
+    object-fit: cover;
+    border-radius: 17%;
+  }
+

@@ -1,15 +1,16 @@
 ---
 title: About
-description: Hugo, the world's fastest framework for building websites
-date: '2019-02-28'
+description: Ice Year's Plane.
+date: '2023-08-16'
 aliases:
   - about-us
   - about-hugo
   - contact
 license: CC BY-NC-ND
-lastmod: '2020-10-09'
+lastmod: '2023-08-16'
 menu:
     main: 
+        name: 关于
         weight: -90
         params:
             icon: user

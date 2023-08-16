@@ -1,6 +1,6 @@
 ---
 title: "Friends"
-date: 2019-05-28
+date: 2023-08-16
 description: 
 slug: "links"
 layout: links
@@ -8,7 +8,7 @@ comments: false
 license: false
 menu: 
     main:
-        name: friends
+        name: 友链
         weight: -90
         params:
             icon: home
