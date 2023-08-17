@@ -25,35 +25,5 @@
 @import "partials/layout/404.scss";
 @import "partials/layout/search.scss";
 
+@import "general.scss";
 @import "custom.scss";
-
-a {
-    text-decoration: none;
-    color: var(--accent-color);
-
-    &:hover {
-        color: var(--accent-color-darker);
-    }
-
-    &.link {  //鼠标未悬停时，超链接显示6px的高亮
-        box-shadow: 0px -7px 0px rgba(var(--link-background-color), var(--link-background-opacity-hover)) inset; 
-        transition: all 0.3s ease;
-
-        &:hover { //鼠标悬停，高亮为10px
-            box-shadow: 0px -11px 0px rgba(var(--link-background-color), var(--link-background-opacity-hover)) inset; 
-        }
-    }
-}
-.section-title {
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 10px;
-    display: block;
-    font-size: 1.6rem;
-    font-weight: bold;
-    color: var(--body-text-color);
-
-    a {
-        color: var(--body-text-color);
-    }
-}

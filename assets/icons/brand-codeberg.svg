@@ -1,1 +1,5 @@
-<svg width="24" height="24" xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path fill='#aaa' d='M12 1A11 11 0 0 0 1 12a11 11 0 0 0 1.7 6.4L12 6l9.3 12.4A11 11 0 0 0 23 12 11 11 0 0 0 12 1Z'/><path fill='#555' d='M21.3 18.4 12 6l4.4 16.8a11 11 0 0 0 4.9-4.4Z' /></svg>
+<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-pyramid" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+  <path d="M3 17l9 4l9 -4l-9 -14z"></path>
+  <path d="M12 3v18"></path>
+</svg>

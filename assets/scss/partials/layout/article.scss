@@ -413,6 +413,18 @@
         }
     }
 
+    .gitlab-embed-snippets {
+        margin: 0 !important;
+
+        .file-holder.snippet-file-content {
+            margin-block-end: 0 !important;
+            margin-block-start: 0 !important;
+            margin-left: calc((var(--card-padding)) * -1) !important;
+            margin-right: calc((var(--card-padding)) * -1) !important;
+            padding: 0 var(--card-padding) !important;
+        }
+    }
+
     /// Negative margins
     blockquote,
     figure,
@@ -423,6 +435,12 @@
         margin-left: calc((var(--card-padding)) * -1);
         margin-right: calc((var(--card-padding)) * -1);
         width: calc(100% + var(--card-padding) * 2);
+    }
+
+    /// Make long KaTeX equations scrollable in the x-axis
+    .katex-display > .katex {
+        overflow-x: auto;
+        overflow-y: hidden;
     }
 
     .highlight {
