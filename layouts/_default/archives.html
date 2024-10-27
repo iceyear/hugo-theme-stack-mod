@@ -1,17 +1,19 @@
 {{ define "body-class" }}template-archives{{ end }}
 {{ define "main" }}
-    {{- $taxonomy := $.Site.GetPage "taxonomyTerm" "categories" -}}
-    {{- $terms := $taxonomy.Pages -}}
-    {{ if $terms }}
-    <h2 class="section-title">{{ $taxonomy.Title }}</h2>
-    <div class="subsection-list">
-        <div class="article-list--tile">
-            {{ range $terms }}
-                {{ partial "article-list/tile" (dict "context" . "size" "250x150" "Type" "taxonomy") }}
-            {{ end }}
+    <header>
+        {{- $taxonomy := $.Site.GetPage "taxonomyTerm" "categories" -}}
+        {{- $terms := $taxonomy.Pages -}}
+        {{ if $terms }}
+        <h2 class="section-title">{{ $taxonomy.Title }}</h2>
+        <div class="subsection-list">
+            <div class="article-list--tile">
+                {{ range $terms }}
+                    {{ partial "article-list/tile" (dict "context" . "size" "250x150" "Type" "taxonomy") }}
+                {{ end }}
+            </div>
         </div>
-    </div>
-    {{ end }}
+        {{ end }}
+    </header>
 
     {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
     {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
@@ -20,11 +22,7 @@
     {{ range $filtered.GroupByDate "2006" }}
     {{ $id := lower (replace .Key " " "-") }}
     <div class="archives-group" id="{{ $id }}">
-        {{ $url := $.RelPermalink }}
-        {{ if $.Site.Params.TrimTrailingSlash }}
-            {{ $url = $url | replaceRE "/$" "" }}
-        {{ end }}
-        <h2 class="archives-date section-title"><a href="{{ $url }}#{{ $id }}">{{ .Key }}</a></h2>
+        <h2 class="archives-date section-title"><a href="{{ $.RelPermalink }}#{{ $id }}">{{ .Key }}</a></h2>
         <div class="article-list--compact">
             {{ range .Pages }}
                 {{ partial "article-list/compact" . }}

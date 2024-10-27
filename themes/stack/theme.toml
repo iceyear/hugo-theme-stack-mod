@@ -20,8 +20,8 @@ features = [
     "search",
 ]
 
-min_version = "0.87.0"
+min_version = "0.123.0"
 
 [author]
-name = "Jimmy Cai"
-homepage = "https://jimmycai.com"
+name = "Ice Year"
+homepage = "https://iceyear.eu.org"

@@ -4,6 +4,18 @@ toggleMenu:
 darkMode:
     other: 暗色模式
 
+list:
+    page:
+        one: "{{ .Count }} 个页面"
+        other: "{{ .Count }} 个页面"
+
+    section:
+        other: 章节
+
+    subsection: 
+        one: 子章节
+        other: 子章节
+
 article:
     back:
         other: 返回
@@ -18,6 +30,7 @@ article:
         other: 最后更新于
 
     readingTime:
+        one: "阅读时长: {{ .Count }} 分钟"
         other: "阅读时长: {{ .Count }} 分钟"
 
 notFound:
@@ -38,6 +51,10 @@ widget:
         title:
             other: 标签云
 
+    categoriesCloud:
+        title:
+            other: 分类
+
 search:
     title:
         other: 搜索
@@ -47,3 +64,10 @@ search:
 
     resultTitle:
         other: "#PAGES_COUNT 个结果 （用时 #TIME_SECONDS 秒）"
+
+footer:
+    builtWith:
+        other: 使用 {{ .Generator }} 构建
+
+    designedBy:
+        other: 主题 {{ .Theme }} 由 {{ .DesignedBy }} 设计

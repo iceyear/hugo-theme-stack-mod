@@ -8,6 +8,10 @@ class StackColorScheme {
     constructor(toggleEl: HTMLElement) {
         this.bindMatchMedia();
         this.currentScheme = this.getSavedScheme();
+        if (window.matchMedia('(prefers-color-scheme: dark)').matches === true)
+            this.systemPreferScheme = 'dark'
+        else
+            this.systemPreferScheme = 'light';
 
         this.dispatchEvent(document.documentElement.dataset.scheme as colorScheme);
 
@@ -86,3 +90,4 @@ class StackColorScheme {
 }
 
 export default StackColorScheme;
+

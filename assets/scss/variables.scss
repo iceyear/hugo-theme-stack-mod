@@ -43,9 +43,9 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
 */
 :root {
     --sys-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Droid Sans", "Helvetica Neue";
-    --zh-font-family: "Noto Serif SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
+    --zh-font-family: "Noto Serif SC", "PingFang SC", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei";
     --base-font-family: "Noto Serif SC", var(--sys-font-family), var(--zh-font-family), sans-serif;
-    --code-font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+    --code-font-family: Menlo, Monaco, Consolas, "Courier New", var(--zh-font-family), monospace;
 }
 
 /*
@@ -124,6 +124,8 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --table-border-color: #dadada;
     --tr-even-background-color: #efefee;
 
+    --kbd-border-color: #dadada;
+
     &[data-scheme="dark"] {
         --code-background-color: #272822;
         --code-text-color: rgba(255, 255, 255, 0.9);
@@ -157,4 +159,10 @@ $defaultTagColors: #fff, #fff, #fff, #fff, #fff;
     --pre-text-color: #f8f8f2;
     --pre-background-color: #272822;
     @import "partials/highlight/dark.scss";
+}
+
+:root {
+    --menu-icon-separation: 40px;
+    --container-padding: 15px;
+    --widget-separation: var(--section-separation);
 }

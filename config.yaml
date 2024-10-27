@@ -1,7 +1,7 @@
 baseurl: https://example.com
 languageCode: en-us
 theme: stack
-paginate: 5
+pagerSize: 5
 title: Example Site
 
 # Change it to your Disqus shortname before using
@@ -89,7 +89,7 @@ params:
             visitor:
             avatar:
             emoji:
-                - https://cdn.jsdelivr.net/gh/walinejs/emojis/weibo
+                - https://testingcf.jsdelivr.net/gh/walinejs/emojis/weibo
             requiredMeta:
                 - name
                 - email

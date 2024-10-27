@@ -1,13 +1,15 @@
 ---
-title: Chinese Test
-description: 这是一个副标题
-date: 2020-09-09
+title: 你好，世界！
+description: Hello, World!
+date: 2023-08-17
 slug: test-chinese
-image: helena-hertz-wWZzXlDpMog-unsplash.jpg
+image: hello-cover.webp
 categories:
     - Test
     - 测试
+
 ---
+
 ## 短代码测试
 
 {{< quote >}}
