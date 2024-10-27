@@ -38,10 +38,10 @@ link.json格式为：
 ```
 [
     {
-        "title": "小球飞鱼",
-        "website": "https://mantyke.icu/",
-        "image": "mantyke.png",
-     "description": "我们会一起遇见鲸鱼吗？"
+        "title": "Ice Year の位面",
+        "website": "https://blog.iceyear.eu.org/",
+        "image": "iceyear.webp",
+     "description": "Il n'y a pas de hasard, il n'y a que des rendez-vous."
     },
 	{
         "title": "友情链接2",
@@ -54,8 +54,7 @@ link.json格式为：
 
 
 
-> 名称：小球飞鱼  
-> 简介：我们会一起遇见鲸鱼吗？  
-> 地址：[https://mantyke.icu/](https://mantyke.icu/)  
-> 头像：[https://testingcf.jsdelivr.net/gh/Mantyke/photo@master/star_min.png](https://testingcf.jsdelivr.net/gh/Mantyke/photo@master/star_min.png)
-
+> 名称：Ice Year の位面
+> 简介：Il n'y a pas de hasard, il n'y a que des rendez-vous.
+> 地址：[https://blog.iceyear.eu.org/](https://blog.iceyear.eu.org/)
+> 头像：[https://blog.iceyear.eu.org/android-chrome-512x512.webp](https://blog.iceyear.eu.org/android-chrome-512x512.webp)

@@ -11,11 +11,9 @@ image:
 slug: stack-theme-mod
 
 ---
-Github仓库地址：[Mantyke](https://github.com/Mantyke)/[stack-theme-mod](https://github.com/Mantyke/Hugo-stack-theme-mod)
+Codeberg 仓库地址：[Ice Year](https://codeberg.org/iceyear)/[hugo-theme-stack-mod](https://codeberg.org/iceyear/hugo-theme-stack-mod)
 
-本主题由[CaiJimmy](https://github.com/CaiJimmy)制作并[发布](https://github.com/CaiJimmy/hugo-theme-stack)，这个仓库是由[Mantyke](https://mantyke.icu/)修改的魔改版本
-
-预览：[Demo站](https://stack-theme-mod.vercel.app/)
+本主题由 [CaiJimmy](https://github.com/CaiJimmy) 制作并[发布](https://github.com/CaiJimmy/hugo-theme-stack)，这个仓库是由 [Ice Year](https://codeberg.org/iceyear) 基于 [Mantyke](https://github.com/Mantyke/) 的魔改版本进行二次修改，结合了其他的一些参考资料并跟进官方 commits ，添加了一些特性，以及修复了一些 bug.
 
 <br>
 
@@ -63,10 +61,10 @@ Github仓库地址：[Mantyke](https://github.com/Mantyke)/[stack-theme-mod](htt
 ```
 [
     {
-        "title": "小球飞鱼",
-        "website": "https://mantyke.icu/",
-        "image": "mantyke.png",
-     "description": "我们会一起遇见鲸鱼吗？"
+        "title": "Ice Year の位面",
+        "website": "https://blog.iceyear.eu.org/",
+        "image": "iceyear.webp",
+     "description": "Il n'y a pas de hasard, il n'y a que des rendez-vous."
     },
 	{
         "title": "友情链接2",
