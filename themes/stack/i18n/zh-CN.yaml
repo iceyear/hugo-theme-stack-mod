@@ -51,7 +51,7 @@ widget:
         title:
             other: 标签云
 
-    categoriesCloud:
+    categories:
         title:
             other: 分类
 

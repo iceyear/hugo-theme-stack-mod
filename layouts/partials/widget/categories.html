@@ -5,10 +5,10 @@
         <div class="widget-icon">
             {{ partial "helper/icon" "infinity" }}  
         </div> 
-        <h2 class="widget-title section-title">Categories</h2>
+        <h2 class="widget-title section-title"> {{ T "widget.categories.title" }} </h2>
     <div class="widget-categories--list">
 <div class="widget">
-    <h3 class="widget-title"> {{ T "widget_categories" }}</h3>
+    <!-- <h3 class="widget-title"> {{ T "widget.categories.title" }}</h3> -->
     <div class="widget-body">
         <div class="category-list">
             {{- range $name, $taxonomy := $.Site.Taxonomies.categories }}
