@@ -4,6 +4,18 @@ toggleMenu:
 darkMode:
     other: 夜晚模式
 
+list:
+    page:
+        one: "{{ .Count }} 個頁面"
+        other: "{{ .Count }} 個頁面"
+
+    section:
+        other: 章節
+
+    subsection:
+        one: 子章節
+        other: 子章節
+
 article:
     back:
         other: 返回
@@ -18,6 +30,7 @@ article:
         other: 最後更新
 
     readingTime:
+        one: "閱讀時間: {{ .Count }} 分鐘"
         other: "閱讀時間: {{ .Count }} 分鐘"
 
 notFound:
@@ -38,6 +51,10 @@ widget:
         title:
             other: 標籤雲
 
+    categories:
+        title:
+            other: 分類
+
 search:
     title:
         other: 搜尋
@@ -47,3 +64,10 @@ search:
 
     resultTitle:
         other: "#PAGES_COUNT 個結果 （用時 #TIME_SECONDS 秒）"
+
+footer:
+    builtWith:
+        other: 使用 {{ .Generator }} 架設
+
+    designedBy:
+        other: 主題 {{ .Theme }} 由 {{ .DesignedBy }} 設計

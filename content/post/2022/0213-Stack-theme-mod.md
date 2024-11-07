@@ -86,7 +86,7 @@ Codeberg 仓库地址：[Ice Year](https://codeberg.org/iceyear)/[hugo-theme-sta
 ```
 #位置：layout/partials/footer/footer.html
 
-    <section class="copyright">
+    <section class="copyleft">
         &copy; 
         {{ if and (.Site.Params.footer.since) (ne .Site.Params.footer.since (int (now.Format "2006"))) }}
             {{ .Site.Params.footer.since }} - 

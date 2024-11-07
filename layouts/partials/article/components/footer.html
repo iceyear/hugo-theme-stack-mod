@@ -2,8 +2,8 @@
     {{ partial "article/components/tags" . }}
 
     {{ if and (.Site.Params.article.license.enabled) (not (eq .Params.license false)) }}
-    <section class="article-copyright">
-        {{ partial "helper/icon" "copyright" }}
+    <section class="article-copyleft">
+        {{ partial "helper/icon" "copyleft" }}
         <span>{{ default .Site.Params.article.license.default .Params.license | markdownify }}</span>
     </section>
     {{ end }}
