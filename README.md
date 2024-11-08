@@ -1,5 +1,7 @@
 Codeberg 仓库地址：[Ice Year](https://codeberg.org/iceyear)/[hugo-theme-stack-mod](https://codeberg.org/iceyear/hugo-theme-stack-mod)
 
+[GitHub 仓库](https://github.com/iceyear/hugo-theme-stack-mod) 仅为 Codeberg 仓库镜像！
+
 本主题由 [CaiJimmy](https://github.com/CaiJimmy) 制作并[发布](https://github.com/CaiJimmy/hugo-theme-stack)，这个仓库是由 [Ice Year](https://codeberg.org/iceyear) 基于 [Mantyke](https://github.com/Mantyke/) 的魔改版本进行二次修改，结合了其他的一些参考资料并跟进官方 commits ，添加了一些特性，以及修复了一些 bug.
 
 ## 使用方式
