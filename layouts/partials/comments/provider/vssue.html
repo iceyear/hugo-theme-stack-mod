@@ -1,9 +1,10 @@
 {{- with .Site.Params.comments.vssue -}}
 <link rel="stylesheet" href="https://unpkg.com/vssue/dist/vssue.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/github-markdown-css" />
 
 <div id="vssue"></div>
 
-<script src="https://unpkg.com/vue/dist/vue.runtime.min.js"></script>
+<script src="https://unpkg.com/vue@2/dist/vue.runtime.min.js"></script>
 <script src="https://unpkg.com/vssue/dist/vssue.{{ .platform }}.min.js"></script>
 
 <script>
@@ -15,10 +16,12 @@
                     title: "{{ $.Title }}",
                     options: {
                         autoCreateIssue: {{ default false .autoCreateIssue }},
+                        baseURL: "{{ .baseURL }}",
                         owner: "{{ .owner }}",
                         repo: "{{ .repo }}",
                         clientId: "{{ .clientId }}",
                         clientSecret: "{{ .clientSecret }}",
+                        proxy: url => `{{.proxy}}${url}`,
                     },
                 },
             }),

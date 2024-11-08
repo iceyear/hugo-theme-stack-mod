@@ -76,10 +76,12 @@ params:
 
         vssue:
             platform:
+            baseURL:
             owner:
             repo:
             clientId:
             clientSecret:
+            proxy: 
             autoCreateIssue: false
 
         # Waline client configuration see: https://waline.js.org/en/reference/client.html
@@ -217,12 +219,12 @@ markup:
             ## Set to true if you have HTML content inside Markdown
             unsafe: true
     tableOfContents:
-        endLevel: 4
+        endLevel: 6
         ordered: true
         startLevel: 2
     highlight: 
         noClasses: false
-        codeFences: false
+        codeFences: true
         guessSyntax: true
         lineNoStart: 1
         lineNos: true
